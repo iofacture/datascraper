@@ -51,8 +51,12 @@ class MarketCapSpider(scrapy.Spider):
 
         sorted(cmclist, key=lambda k: k['percent'], reverse=True)
 
+        header = "%-17s %-17s %-17s %-17s %-17s %-17s\n" % ('Ranking', 'Source', 'Pair', 'Volume', 'Price', 'Percent')
+        handle.write(header)
+        separator = ((("-" * 17) + " ") * 6) + '\n'
+        handle.write(separator)
         for r in cmclist:
-            record = "%s %s %s %s %s %s\n" % (
+            record = "%-17s %-17s %-17s %-17s %-17s %-17s\n" % (
             r['ranking'], r['source'], r['pair'], r['volume'], r['price'], r['percent'])
             handle.write(record)
 
