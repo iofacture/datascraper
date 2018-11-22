@@ -1,0 +1,30 @@
+Ranking           Source            Pair              Volume            Price             Percent          
+----------------- ----------------- ----------------- ----------------- ----------------- ----------------- 
+1                 BitMEX            BTC/USD           $1,551,230,837    $5485.50                           
+13                Simex             BTC/USD           $99,865,564       $5494.64                           
+15                Bitfinex          BTC/USD           $88,723,196       $5615.20                           
+29                Coinbase Pro      BTC/USD           $45,408,084       $5488.37                           
+32                Coinsuper         BTC/USD           $44,241,213       $5488.62                           
+38                CoinsBank         BTC/USD           $40,090,864       $5491.68                           
+42                Bitstamp          BTC/USD           $36,423,341       $5488.15                           
+49                Cryptonex         BTC/USD           $30,909,172       $5492.90                           
+64                Kraken            BTC/USD           $22,043,020       $5486.40                           
+77                Gemini            BTC/USD           $17,736,312       $5492.65                           
+87                itBit             BTC/USD           $15,213,923       $5490.30                           
+106               Livecoin          BTC/USD           $11,115,485       $5710.20                           
+113               Neraex            BTC/USD           $9,891,358        $5729.05                           
+121               Bitinka           BTC/USD           $8,760,004        $5433.04                           
+122               P2PB2B            BTC/USD           $8,509,348        $5939.99                           
+136               GBX               BTC/USD           $7,471,757        $5488.31
+157               BiteBTC           BTC/USD           $6,144,611        $5600.57                           
+158               LakeBTC           BTC/USD           $6,126,945        $6107.44                           
+160               Exmo              BTC/USD           $6,033,292        $5783.56                           
+177               Exrates           BTC/USD           $5,274,736        $5720.29                           
+198               BCoin.sg          BTC/USD           $4,431,875        $5488.84                           
+209               Coinhub           BTC/USD           $3,793,821        $5624.41                           
+221               Coindeal          BTC/USD           $3,520,282        $5552.85                           
+225               CEX.IO            BTC/USD           $3,475,252        $5586.20                           
+250               Bitlish           BTC/USD           $3,024,238        $5481.20                           
+277               Bittrex           BTC/USD           $2,470,846        $5483.34                           
+301               Liquid            BTC/USD           $2,140,704        $5498.00                           
+321               Cryptology        BTC/USD           $1,770,726        $5493.77                           
