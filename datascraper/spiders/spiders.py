@@ -33,20 +33,15 @@ class MarketCapSpider(scrapy.Spider):
 
         cmclist = []
         for row in trows:
-
             pair = row.xpath('td[3]/a[1]/text()').extract()[0].strip()
 
             if pair == 'BTC/USD':
-
-                cmcrow = {}
-                cmcrow['pair'] = pair
-
-                cmcrow['ranking'] = row.xpath('td[1]/text()').extract()[0].strip()
-                cmcrow['source'] = row.xpath('td[2]/a[1]/text()').extract()[0].strip()
-                cmcrow['volume'] = row.xpath('td[4]/span[1]/text()').extract()[0].strip()
-                cmcrow['price'] = row.xpath('td[5]/span[1]/text()').extract()[0].strip()
-                cmcrow['percent'] = row.xpath('td[6]/text()').extract()[0].strip()
-
+                cmcrow = {'pair': pair,
+                          'ranking': row.xpath('td[1]/text()').extract()[0].strip(),
+                          'source': row.xpath('td[2]/a[1]/text()').extract()[0].strip(),
+                          'volume': row.xpath('td[4]/span[1]/text()').extract()[0].strip(),
+                          'price': row.xpath('td[5]/span[1]/text()').extract()[0].strip(),
+                          'percent': row.xpath('td[6]/text()').extract()[0].strip()}
                 cmclist.append(cmcrow)
 
         sorted(cmclist, key=lambda k: k['percent'], reverse=True)
@@ -56,8 +51,8 @@ class MarketCapSpider(scrapy.Spider):
         separator = ((("-" * 17) + " ") * 6) + '\n'
         handle.write(separator)
         for r in cmclist:
-            record = "%-17s %-17s %-17s %-17s %-17s %-17s\n" % (
-            r['ranking'], r['source'], r['pair'], r['volume'], r['price'], r['percent'])
+            record = "%-17s %-17s %-17s %-17s %-17s %-17s\n" % (r['ranking'], r['source'],
+                                                                r['pair'], r['volume'], r['price'], r['percent'])
             handle.write(record)
 
         handle.close()
