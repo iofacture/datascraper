@@ -1,13 +1,7 @@
 """
-Copyright 2017 Iofacture Digital Solutions (IDS)
-
-This file is subject to the terms and conditions defined in
-file 'LICENSE.txt', which is part of this source code package.
 
 Author: Matthew Ishii
 Created: 01-02-2018
-
-Notes:
 
 """
 
